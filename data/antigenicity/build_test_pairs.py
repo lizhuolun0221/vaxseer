@@ -27,6 +27,8 @@ def parse_args():
     parser.add_argument('--virus_fasta_path', default=None, type=str)
     parser.add_argument('--vaccine_fasta_path', default=None, type=str)
     parser.add_argument('--save_path', default=None, type=str)
+    parser.add_argument('--include_self_pairs', action='store_true',
+                        help="Keep identical query/target IDs for a complete pair matrix; default preserves official behavior.")
       
     args = parser.parse_args()
     return args
@@ -38,7 +40,7 @@ min_vaccine_freq = 0
 
 virus_seqs = read_fasta(args.virus_fasta_path)
 vaccine_seqs = read_fasta(args.vaccine_fasta_path)
-alignments = read_m8(args.alignment_path)
+alignments = read_m8(args.alignment_path, remove_self=not args.include_self_pairs)
 
 # filter
 def filter_data_by_count(records, min_freq):

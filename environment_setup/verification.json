@@ -1,0 +1,94 @@
+{
+  "python": "3.8.18 | packaged by conda-forge | (default, Dec 23 2023, 17:21:28) \n[GCC 12.3.0]",
+  "executable": "/home/lizhuolun/Nat Med/vaxseer_reproduction/vaxseer_lzl/bin/python",
+  "imports": {
+    "torch": {
+      "ok": true,
+      "version": "1.13.1+cu117"
+    },
+    "torchvision": {
+      "ok": true,
+      "version": "0.14.1+cu117"
+    },
+    "torchaudio": {
+      "ok": true,
+      "version": "0.13.1+cu117"
+    },
+    "pytorch_lightning": {
+      "ok": true,
+      "version": "1.7.6"
+    },
+    "lightning_transformers": {
+      "ok": true,
+      "version": "0.2.1"
+    },
+    "transformers": {
+      "ok": true,
+      "version": "4.19.0"
+    },
+    "torchmetrics": {
+      "ok": true,
+      "version": "0.11.4"
+    },
+    "Bio": {
+      "ok": true,
+      "version": "1.81"
+    },
+    "numpy": {
+      "ok": true,
+      "version": "1.24.4"
+    },
+    "scipy": {
+      "ok": true,
+      "version": "1.10.1"
+    },
+    "sklearn": {
+      "ok": true,
+      "version": "1.3.2"
+    },
+    "pandas": {
+      "ok": true,
+      "version": "2.0.3"
+    },
+    "seaborn": {
+      "ok": true,
+      "version": "0.13.0"
+    },
+    "jupyterlab": {
+      "ok": true,
+      "version": "4.0.9"
+    },
+    "openpyxl": {
+      "ok": true,
+      "version": "3.1.5"
+    },
+    "dropbox": {
+      "ok": true,
+      "version": "12.1.0"
+    },
+    "models": {
+      "ok": true,
+      "version": null
+    },
+    "data.data_modules": {
+      "ok": true,
+      "version": null
+    },
+    "config": {
+      "ok": true,
+      "version": null
+    }
+  },
+  "cpu_autograd": true,
+  "cuda_available": false,
+  "torch_cuda_build": "11.7",
+  "pip_check": {
+    "ok": true,
+    "output": "No broken requirements found.\nDEPRECATION: pytorch-lightning 1.7.6 has a non-standard dependency specifier torch>=1.9.*. pip 24.1 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of pytorch-lightning or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063\n"
+  },
+  "mmseqs": {
+    "ok": true,
+    "version": "a13af93468c997d73572c9326b69ac0c66c6583a",
+    "stderr": ""
+  }
+}
